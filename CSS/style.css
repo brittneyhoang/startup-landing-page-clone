@@ -53,6 +53,9 @@ ol, ul {
 /* Navigation Section */
 .navigation-bar {
     background-color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
 }
 .navigation-bar> .content {
     width: 970px;
@@ -122,4 +125,23 @@ ol, ul {
 	border-radius: 4px;
 	padding: 1rem 1.5rem;
 	font-size: 1.125rem
+}
+.RTBs {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	color: black;
+	font-size: 40px;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+.icon {
+	padding: 44px 60px;
+}
+.RTB-content {
+	display: inline-block;
+	font-size: 25px;
+	letter-spacing: 0.02em;
+	color: black;
 }
