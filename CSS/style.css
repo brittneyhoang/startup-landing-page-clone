@@ -1,3 +1,11 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -30,40 +38,88 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Roboto', sans-serif; 
 }
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+/* End of Reset */
+/* Start of Custom Styles */
+.content {
+	padding:0 2px;
+	margin-top: auto;
 }
 
 /* Navigation Section */
-.top-navigation {
-    background-color: #000000;
+.navigation-bar {
+    background-color: #fff;
 }
-.top-navigation > .content {
+.navigation-bar> .content {
     width: 970px;
     height: 70px;
     margin: 0 auto;
 }
-.logo {
+.navigation-bar .logo {
 	height: 70px;
 }
 .menu {
 	float: right;
+	font-family: 'Roboto', sans-serif; 
+	color: #838994;
+	letter-spacing: 0.03em;
+	font-size: 16px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 2em 0;
+	margin-top: auto;
+	-webkit-font-smoothing: antialiased;
+}
+.navigation-bar .menu li {
 	display: inline-block;
+	margin-left: 25px;
 }
-.content {
-	padding: 0px 15px;
+.navigation-bar .menu .active {
+	color: #4c5058;
+	font-weight: 600;
 }
+.navigation-bar .link li:hover {
+	cursor: pointer;
+	color: #333333;
 
+}
+.intro-image {
+	padding: 20em 0;
+	background-image: URL(http://i61.tinypic.com/ifvksi.jpg);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 45.938;
+}
+.intro-karma, 
+.intro-content {
+	text-align: center;
+	color: #FFFFFF;
+	-webkit-font-smoothing: antialiased;
+	line-height: 50px;
+}
+.intro-karma {
+	font-size: 40px;
+	letter-spacing: 0.03em;
+}
+.intro-content {
+	font-size: 25px;
+	letter-spacing: 0.02em;
+}
+.button {
+	margin: 0 auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #f15a29;
+	color: #FFFFFF;
+	width: 9.688rem;
+	text-shadow: none;
+	border-style: none;
+	border-radius: 4px;
+	padding: 1rem 1.5rem;
+	font-size: 1.125rem
+}
